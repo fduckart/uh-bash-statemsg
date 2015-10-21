@@ -1,0 +1,8 @@
+LOAD DATA
+APPEND
+INTO TABLE FMISADM.FMIS_STATE_MESSAGE
+(
+  MSG_PAY_PERIOD_DATE  POSITION(1:10)     DATE 'mm/dd/yyyy',
+  MSG_TEXT             POSITION(15:3014)  CHAR  NULLIF MSG_TEXT=BLANKS,
+  MSG_ID               "msg_sequence.nextval"
+)

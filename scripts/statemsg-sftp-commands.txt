@@ -1,0 +1,3 @@
+cd TO-UH-GALC-PAYR
+lcd /home/fmisadm/statemsg/scripts
+get STATE-UH-MSG.TXT
